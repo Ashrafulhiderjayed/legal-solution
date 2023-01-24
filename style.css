@@ -63,6 +63,11 @@ responsive
         width: 34.62px;
         height: 25px;
     } */
+    #customize{
+        height: 30px;
+        width: 30px;
+        margin-bottom: none;
+    }
     .container-fluid{
         display: flex !important;
         flex-direction: row;
