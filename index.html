@@ -22,7 +22,7 @@
     <header>
                     <!-- Navbar  -->
         <section>
-            <nav class="navbar navbar-expand-lg bg-light my-3">
+            <nav class="navbar navbar-expand-lg bg-light my-3 sticky-lg-top sticky-xl-top sticky-xxl-top">
                 <div class="container-fluid">
                   <a class="navbar-brand me-lg-5 me-xl-5 me-xxl-5" href="#">                  
                     <img src="./images/logo2.png" class="img-fluid nav-img" alt="...">
@@ -49,8 +49,27 @@
                         <a class="nav-link">Contuct Us ></a>
                       </li>
                     </ul>
-                    <button class="main-btn btn text-white border-0 rounded fw-semibold" type="submit">Free Consultation</button>
-                    
+                    <button id="first-btn" class="main-btn btn text-white border-0 rounded fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Free Consultation</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Did not Sign Up?</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            Sign up and ready to goooooo
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>    
+                    <!-- Modal end-->
                   </div>
                 </div>
             </nav>
@@ -70,7 +89,7 @@
                         <input class="form-control me-auto" type="text" placeholder="Search your services" aria-label="Add your item here...">
                         <button type="button" class="btn btn-secondary main-btn">Search</button>
                         <div class="vr"></div>
-                      </div>
+                    </div>
                 </div>  
             </div>
         </section>
@@ -84,19 +103,289 @@
             <p>Legal practice area refers to the specific field of law that an attorney or law firm specializes in. Examples include criminal law, corporate law, family law, intellectual property, and many others. Attorneys may specialize in one or multiple areas depending on their expertise and interests.</p>
         </div>
     </section>
+
                     <!-- 
                         card section  
                     -->
-    <section>
-        
+    <section class="mb-5">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card py-5 px-2" style="width: 22rem;">
+                    <img src="./images/business.png" class="card-img-top mx-auto w-25" alt="Responsive image">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Business Law</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="mx-auto"><img src="./images/Frame.png" class="img-fluid" alt="..."></a>
+                    </div>
+                </div>                
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card py-5 px-2" style="width: 22rem;">
+                    <img src="./images/criminal.png" class="card-img-top mx-auto w-25" alt="Responsive image">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Criminal Law</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="mx-auto"><img src="./images/Frame.png" class="img-fluid" alt="..."></a>
+                    </div>
+                </div>                
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card py-5 px-2" style="width: 22rem;">
+                    <img src="./images/child.png" class="card-img-top mx-auto w-25" alt="Responsive image">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Child Law</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="mx-auto"><img src="./images/Frame.png" class="img-fluid" alt="..."></a>
+                    </div>
+                </div>                
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card py-5 px-2" style="width: 22rem;">
+                    <img src="./images/education.png" class="card-img-top mx-auto w-25" alt="Responsive image">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Education Law</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="mx-auto"><img src="./images/Frame.png" class="img-fluid" alt="..."></a>
+                    </div>
+                </div>                
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card py-5 px-2" style="width: 22rem;">
+                    <img src="./images/divorce.png" class="card-img-top mx-auto w-25" alt="Responsive image">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Divorce Law</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="mx-auto"><img src="./images/Frame.png" class="img-fluid" alt="..."></a>
+                    </div>
+                </div>                
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card py-5 px-2" style="width: 22rem;">
+                    <img src="./images/tax.png" class="card-img-top mx-auto w-25" alt="Responsive image">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Tax Law</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="mx-auto"><img src="./images/Frame.png" class="img-fluid" alt="..."></a>
+                    </div>
+                </div>                
+              </div>
+            </div>
+          </div>
     </section>
 
+                    <!-- 
+                        What Our Client Say section  
+                    -->
+    <section class="text-center mb-5 p-5">
+        <h1>What Our Client Say</h1>
+        <p class="mt-3">Hear what our satisfied clients have to say about our services.</p>
+    </section>
+
+                    <!-- 
+                        Carousel  
+                    -->
+    <section id="carousel-section " class=" ">
+        <div id="carouselExampleCaptions" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              
+              <div class="carousel-item active">
+                <img src="./images/slider-2.jpg" class="d-block w-100 filter brightness-75 img-make-dark" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <img src="./images/mushfiqur-rahim.webp" class="border border-white border-5 rounded-circle mb-3 w-10 shadow " alt="">
+                  <h3>Mushfiqur Rahim</h3>
+                  <h5 class="mb-5">Defender</h5>
+                  <p>I definitely recommend The Law Firm Group. Very professional, received a very helpful and professional service.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider-2.jpg" class="d-block w-100 filter brightness-75 img-make-dark" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <img src="./images/mohammad-ashraful.webp" class="border border-white border-5 rounded-circle mb-3 w-10 shadow " alt="">
+                  <h3>Mohammad Ashraful</h3>
+                  <h5 class="mb-5">Sportsman</h5>
+                  <p>I definitely recommend The Law Firm Group. Very professional, received a very helpful and professional service.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider-3.jpg" class="d-block w-100 filter brightness-75 img-make-dark" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <img src="./images/tamim-iqbal.webp" class="border border-white border-5 rounded-circle mb-3 w-10 shadow " alt="">
+                  <h3>Tamim Iqbal</h3>
+                  <h5 class="mb-5">Batsman</h5>
+                  <p>The Law Firm Group helped me with buying my first property and I was so glad I went with them. </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    
+    
+
+            <!-- 
+                Section  
+            -->
+    <section class="text-center my-5 p-5">
+        <h1>Frequently Asked Questions</h1>
+        <p>Questions that customers have asked</p>
+    </section>
+
+                    <!-- 
+                        Customer Question  
+                    -->
+    <section>
+        <div class=" row qsn-section">
+            <div class="gray-200 col-12 col-md-12 col-lg-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item mb-4 gray-200">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button gray-200" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Flex vs Grid?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>CSS Flexbox and Grid Layout are both layout modules in CSS that allow you to create flexible and responsive designs.</strong> <br>
+
+                          Flexbox is a one-dimensional layout module . horizontal or vertical direction. 
+                          Grid Layout, on the other hand, is a two-dimensional layout module that helps you create flexible and responsive designs in both the horizontal and vertical directions.
+                          
+                          In short, Flexbox is good for simple one-dimensional layouts and Grid Layout is good for more complex two-dimensional layouts.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          What is the purpose of Media Query?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <bold>The purpose of a media query is to apply CSS styles based on the characteristics of the device or screen displaying a webpage.</bold><br> This allows web developers to create responsive designs that adjust to different screen sizes and orientations, ensuring that the webpage looks and functions well on a wide range of devices, including desktop computers, laptops, tablets, and smartphones. Media queries are typically used in conjunction with CSS @media rules to apply styles only when certain conditions, such as screen width or resolution, are met.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          What is CSS Box Model?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The CSS Box Model is the concept in CSS that describes the rectangular boxes that are generated for elements in the document tree and laid out according to the visual formatting model. Each box has a content area, surrounded by optional padding, borders, and margins. The size of the box, including the size of its content, padding, borders, and margins, can be influenced by CSS properties like width, height, padding, border, and margin. Understanding the box model is essential for controlling the layout of elements on a web page.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          How CSS Box Model works?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The CSS Box Model works by determining the size and position of a rectangular box for each HTML element. The box is made up of four parts: the content, padding, border, and margin.
+
+                            The content is the area where the element's text or image is displayed. The width and height properties of the element set the size of the content area.
+                            
+                            The padding is the area between the content and the border. The padding properties (padding-top, padding-right, padding-bottom, padding-left) set the size of the padding around the content.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          What is semantic tag?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            A semantic tag is a label or annotation that is used to indicate the meaning or purpose of a piece of content, such as text or an image. It can be used to classify or categorize the content, making it easier to find and understand. Examples of semantic tags include HTML tags, which are used to structure web pages, and metadata tags, which are used to describe the characteristics of a file or digital asset.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          When to use Bootstrap and when Tailwind?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Bootstrap is a widely-used framework with pre-designed CSS classes and JavaScript components, while Tailwind is a newer framework with low-level utility classes for creating custom designs. The choice between the two depends on your project requirements and personal preferences.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6">
+                <img src="./images/faq.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </section>
     </main>
                 <!-- 
                     Footer  
                  -->
-    <footer>
-
+    <footer class="mt-5 text-white">
+        <div class="container p-5 row mx-auto">
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="./images/logo.png" class="mb-3" alt="">
+                <p>The man who passes the sentence should swing the sword. If you would take a man's life, you owe it to him to look into his eyes and hear his final words. And if you cannot bear to do that, then perhaps the man does not deserve to die.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <h3 class="mb-4">Useful Link</h3>
+                <ul class="d-flex-column">
+                    <li>Home</li>
+                    <li>COntact Us</li>
+                    <li>Cases</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <h3 class="mb-4">Contact now</h3>
+                <p class="mb-3">555 4th 5t oW, Washington <br>DC 205v0, United States </p>
+                <p class="mb-3">+88 0175 000 000 <br> +88 0175 000 000</p>
+                <p class="mb-3">info@gmail.com <br>info@gmail.com</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <h3 class="mb-4">Subscribe</h3>
+                <p>Subscribe for our latest & <br>
+                    rticles. We Won’t Give you <br>
+                    Spam Mails</p>
+                <div class="hstack mb-5">
+                    <input class="form-control me-auto" type="email" placeholder="Search your services" aria-label="Email Address">
+                    <button type="button" class="btn btn-secondary main-btn"><svg width="24" height="24" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_12_37)">
+                        <path d="M12.7279 21.2427L4.52197 16.8989C10.4846 13.6228 16.9629 11.3888 23.6775 10.2931C22.5826 17.0078 20.3492 23.4863 17.0738 29.4494L12.7279 21.2427ZM12.7279 21.2427L18.0312 15.9394" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_12_37">
+                        <rect width="24" height="24" fill="white" transform="translate(0 17) rotate(-45)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        </button>
+                    <div class="vr"></div>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>

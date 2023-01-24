@@ -8,6 +8,14 @@ h1, h2, h3{
     font-family: 'EB Garamond', serif;
 }
 
+ li{
+    list-style-type: none;
+}
+
+#first-btn:hover{
+    background-color: #de861b;
+}
+
 
 #header-bg-img{
     /* background-image: url('./images/banner.png'); */
@@ -19,6 +27,30 @@ h1, h2, h3{
 .grad {
     /* background-image: linear-gradient(white, black); */
   }
+.custom-height{
+    height: 400px;
+}
+
+.img-dark{
+    filter: brightness(75%);
+}
+
+  
+
+.img-make-dark{
+    mix-blend-mode: darken;
+}
+
+
+footer{
+    background-color: #111111;
+}
+
+
+
+
+
+
 
 
  
@@ -35,10 +67,28 @@ responsive
         display: flex !important;
         flex-direction: row;
     }
+    #carousel-section{
+        /* width: 100%; */
+    }
+    
 }
+/* ============== */
+/* @media (max-width: 767px) {
+    .carousel-caption {
+      display: block;
+    }
+  }
+  @media (min-width: 768px) {
+    .carousel-caption {
+      display: none;
+    }
+  } */
+  /* ================ */
+
  /* Large device  */
 @media screen and (min-width: 1268px){
     .large-dev-width{
         width: 50%;
     }
+    
 }
